@@ -1,0 +1,10 @@
+/* Css properties */
+
+#navbar ul li{
+    display: inline;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
