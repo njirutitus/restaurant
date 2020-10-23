@@ -1,10 +1,75 @@
 /* Css properties */
 
+#navbar {
+    background-color: #003d00;
+    color: floralwhite;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+}
+
+.jumbotron {
+    background-color: #32681d;
+    margin: 0 auto;
+    padding: 70px 30px 70px 30px;
+    color: floralwhite;
+}
+
+.container {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.jumbotron h1{
+    font-size: 72px;
+}
+
+.jumbotron p{
+    font-size: 36px;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.bg-dark {
+    color: #fff;
+}
+
 #navbar ul li{
     display: inline;
+    margin-right: 5px;
 }
 
 img {
     width: 300px;
     height: 300px;
+}
+
+.row-content {
+    margin:0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height: 400px;
+}
+
+.table-bordered  tr td{
+    font-size: 20px;
+    border: 1px solid grey;
+}
+
+.table-bordered{
+    border-collapse: collapse;
+    width: 400px;
+}
+
+.table-bordered caption{
+    font-size: 26px;
+    background-color: #003d00;
+}
+
+footer {
+    background-color: #619648;
+
 }
