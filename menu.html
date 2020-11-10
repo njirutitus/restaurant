@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="./styles/main.css">
+    <script src="https://kit.fontawesome.com/9ad9a54963.js" crossorigin="anonymous"></script>
 
     <title>Mama Fish Restaurant: Menu</title>
 
@@ -13,12 +14,12 @@
     <body>
 
         <!-- Navigation bar-->
-        <header id="navbar">
+        <header id="navbar" class="bg-dark">
             <ul class="list-unstyled">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About us</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="contact.html" >Contact us</a></li>  
+                <li><a href="index.html" class="bg-dark"><i class="fas fa-home"></i> Home /</a></li>
+                <li><a href="about.html" class="bg-dark"><i class="fas fa-info"></i> About us /</a></li>
+                <li><a href="menu.html" class="bg-dark" id="menu-toggler"><i class="fas fa-bars"></i> Menu /</a></li>
+                <li><a href="contact.html" class="bg-dark"> <i class="fas fa-id-card"></i> Contact us</a></li>  
             </ul>
     
         </header>
@@ -34,17 +35,17 @@
             <h1>Popular Menu Items</h1>
 
             <!-- Chips -->
-            <div class="menu-item">
+            <div class="menu-item row">
 
                 <!-- Dish -->
-                <div class="item-img">
+                <div class="item-img col-3">
                     <h3>Chips</h3>
                     <a href=""><img src="./images/chips.jpeg" alt="Chips"></a>
                 </div>
 
                 <!-- Descritption -->
 
-                <div class="item-description">
+                <div class="item-description col-9">
                     <h3>KES 300</h3>
                     <hr />
                     <p>
@@ -56,13 +57,13 @@
             </div>
 
             <!-- Bugger -->
-            <div class="menu-item">
-                <div class="item-img">
+            <div class="menu-item row">
+                <div class="item-img col-3">
                     <h3>Bugger</h3>
                     <a href=""><img src="./images/bugger.jpeg" alt="bugger"></a>
                 </div>
 
-                <div class="item-description">
+                <div class="item-description  col-9">
                     <h3>KES 480</h3>
                     <hr />
                     <p>
@@ -74,13 +75,13 @@
             </div>
 
             <!-- Pan cakes -->
-            <div class="menu-item">
-                <div class="item-img">
+            <div class="menu-item row">
+                <div class="item-img  col-3">
                     <h3>Pan Cakes</h3>
                     <a href=""><img src="./images/pan-cakes.jpeg" alt="pan cakes"></a>
                 </div>
 
-                <div class="item-description">
+                <div class="item-description  col-9">
                     <h3>kes 280</h3>
                     <hr />
                     <p>
@@ -91,13 +92,13 @@
             </div>
 
             <!-- Ice cream -->
-            <div class="menu-item">
-                <div class="item-img">
+            <div class="menu-item row">
+                <div class="item-img col-3">
                     <h3>Ice cream</h3>
                     <a href=""><img src="./images/ice-cream.jpeg"></a>
                 </div>
 
-                <div class="item-description">
+                <div class="item-description col-9">
                     <h3>Kes 180</h3>
                     <hr />
                     <p>
@@ -116,7 +117,7 @@
 
         <footer class="container-fluid">
             <div class="row">
-                <div class="col-4">
+                <div class="col-3">
                     <h2>links</h2>
                     <ul class="list-unstyled">
                         <li><a href="">Home</a></li>
@@ -126,7 +127,7 @@
                     </li> 
                 </div>
         
-                <div class="col-8">
+                <div class="col-3">
                     <h2>Address</h2>
                     <p>
                         anniversary towers <br >

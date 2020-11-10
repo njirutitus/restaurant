@@ -1,75 +1,101 @@
 /* Css properties */
 
 #navbar {
-    background-color: #003d00;
-    color: floralwhite;
-    height: 50px;
-    line-height: 50px;
-    margin: 0 auto;
+  background-color: #003d00;
+  color: floralwhite;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto;
 }
 
 .jumbotron {
-    background-color: #32681d;
-    margin: 0 auto;
-    padding: 70px 30px 70px 30px;
-    color: floralwhite;
+  background-color: #32681d;
+  margin: 0 auto;
+  padding: 70px 30px 70px 30px;
+  color: floralwhite;
 }
 
 .container {
-    width: 90%;
-    margin-left: 5%;
+  width: 90%;
+  margin-left: 5%;
+  clear: both;
 }
 
-.jumbotron h1{
-    font-size: 72px;
+.jumbotron h1 {
+  font-size: 72px;
 }
 
-.jumbotron p{
-    font-size: 36px;
-
+.jumbotron p {
+  font-size: 36px;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 .bg-dark {
-    color: #fff;
+  color: #fff;
 }
 
-#navbar ul li{
-    display: inline;
-    margin-right: 5px;
+#navbar ul li {
+  display: inline;
+  margin-right: 5px;
 }
 
 img {
-    width: 300px;
-    height: 300px;
+  width: 300px;
+  height: 300px;
 }
 
 .row-content {
-    margin:0px auto;
-    padding: 50px 0px 50px 0px;
-    border-bottom: 1px ridge;
-    min-height: 400px;
+  margin: 0px auto;
+  padding: 50px 0px 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px;
 }
 
-.table-bordered  tr td{
-    font-size: 20px;
-    border: 1px solid grey;
+.table-bordered tr td {
+  font-size: 20px;
+  border: 1px solid grey;
 }
 
-.table-bordered{
-    border-collapse: collapse;
-    width: 400px;
+.table-bordered {
+  border-collapse: collapse;
+  width: 400px;
 }
 
-.table-bordered caption{
-    font-size: 26px;
-    background-color: #003d00;
+.table-bordered caption {
+  font-size: 26px;
+  background-color: #003d00;
 }
 
 footer {
-    background-color: #619648;
+  background-color: #619648;
+  min-height: 250px;
+}
 
+.col-3 {
+  width: 30%;
+  float: left;
+}
+
+.col-9 {
+  width: 70%;
+  float: left;
+}
+.row {
+  clear: both;
+}
+
+.list-unstyled {
+  list-style-type: none;
+}
+
+.container-fluid {
+  width: 100%;
+  clear: both;
+}
+
+.text-center {
+  text-align: center;
 }
