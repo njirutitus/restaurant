@@ -15,7 +15,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
@@ -60,8 +60,9 @@ a {
 img {
   width: 200px;
   height: 200px;
+  box-sizing: border-box;
   border: 0.25rem solid goldenrod;
-  border-radius: var(--radius);
+  border-radius: 0.5rem;
 }
 
 .row-content {
@@ -163,6 +164,7 @@ footer {
 .menu-item {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   max-width: 600px;
   box-sizing: border-box;
   padding: 10px;
@@ -176,6 +178,7 @@ footer {
   padding: 5px;
   display: flex;
   flex-direction: column;
+  max-width: 300px;
 }
 
 .item-header {
@@ -202,7 +205,7 @@ h4 {
 }
 
 .underline {
-  width: 15rem;
+  width: 20rem;
   height: 0.25rem;
   background: #c59d5f;
   margin-left: auto;
