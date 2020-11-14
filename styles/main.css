@@ -89,8 +89,10 @@ img {
 }
 
 footer {
+  box-sizing: border-box;
   background-color: #619648;
   min-height: 250px;
+  padding: 15px;
 }
 
 .col-3 {
@@ -104,9 +106,8 @@ footer {
 }
 .highlights-item {
   box-sizing: border-box;
-  max-width: 700px;
+  max-width: 1000px;
   margin: 0 auto;
-  clear: both;
   display: flex;
   flex-direction: column;
 }
@@ -115,11 +116,17 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
   padding: 5px;
 }
 
-.highlight-img {
-  margin-right: 15px;
+.highlight-description {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.highlight-description h3 {
+  border-bottom: 0.5px dotted;
 }
 
 .list-unstyled {
@@ -173,6 +180,8 @@ footer {
 
 .item-img {
   margin-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .item-description {
@@ -206,7 +215,7 @@ h4 {
 }
 
 .underline {
-  width: 20rem;
+  width: 5rem;
   height: 0.25rem;
   background: #c59d5f;
   margin-left: auto;
