@@ -6,74 +6,97 @@
 
         <!-- Custom styles -->
         <link rel="stylesheet" href="./styles/main.css">
+        <script src="https://kit.fontawesome.com/9ad9a54963.js" crossorigin="anonymous"></script>
+
         <title>Mama Fish Restaurant: About Us</title>
     </head>
     <body>
-        <header id="navbar" class="bg-dark">
-            <ul class="list-unstyled">
-                <li><a href="index.html" class="bg-dark"><i class="fas fa-home"></i> Home /</a></li>
-                <li><a href="about.html" class="bg-dark"><i class="fas fa-info"></i> About us /</a></li>
-                <li><a href="menu.html" class="bg-dark" id="menu-toggler"><i class="fas fa-bars"></i> Menu /</a></li>
-                <li><a href="contact.html" class="bg-dark"> <i class="fas fa-id-card"></i> Contact us</a></li>  
-            </ul>
-            <form>
-                <input type="search" placeholder="Search for a product"/>
-            </form>
-    
-        </header>
+       <!-- Navigation bar-->
+       <nav id="navbar" class="bg-dark">
+        <a href="index.html" class="bg-dark">Mama Fish</a>
+        <ul class="list-unstyled">
+            <li><a href="index.html" class="bg-dark"><i class="fas fa-home"></i> Home /</a></li>
+            <li><a href="about.html" class="bg-dark"><i class="fas fa-info"></i> About us /</a></li>
+            <li><a href="menu.html" class="bg-dark dropdown"><i class="fas fa-bars"></i> Menu /</a>
+            
+            </li>
+            <li><a href="contact.html" class="bg-dark"> <i class="fas fa-id-card"></i> Contact us</a></li>  
+        </ul>
 
-        <section class="jumbotron">
+        <a href="" class="bg-dark"> <i class="fas fa-sign-in-alt"></i> Login</a>
+
+    </nav>
+    
+    <!-- Jumbotron -->
+    <header class="jumbotron row">
+        <div class="col-6">
             <h1 class="bg-dark">Mama Fish Restaurant</h1>
-            <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
-        </section>
+            <p >We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+        </div>
+        <div class="col-6">
+            <button>Sign Up</button>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <div class="separator">/</div>
+        <a href="">About</a>
+    </div>
 
         <!-- About us main Section-->
         <main class="container">
-            <h1>About Us page</h1>
-            <hr>
+            <h1>About Us</h1>
+            <div class="underline"></div>
+
 
             <!-- History -->
             <div class="row row-content">
-                <h2>History</h2>
-                <p>
-                    Started in 2010, Mama Fish Restaurant quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong. Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.
-                </p>
-                <p>
-                    The restaurant traces its humble beginnings to The Frying Pan, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.
-                </p>
-            </div>
+                <div class="col-6 mr-auto">
+                    <h2>History</h2>
+                    <p>
+                        Started in 2010, Mama Fish Restaurant quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong. Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.
+                    </p>
+                    <p>
+                        The restaurant traces its humble beginnings to The Frying Pan, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.
+                    </p>
+                </div>
 
-            <!-- Facts and Figures-->
-            <div class="row row-content">
-                <table class="table-bordered">
-                    <caption class="bg-dark">Facts and Figures</caption>
-                    <tr>
-                        <td>Started</td>
-                        <td>2010</td>
-                    </tr>
-                    <tr>
-                        <td>Employees</td>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <td>Major stake Holder</td>
-                        <td>HK fine food inc.</td>
-                    </tr>
-                    <tr>
-                        <td>Last Year's Revenue</td>
-                        <td>KES 2,000,000</td>
-                    </tr>
-                </table>
+                <!-- Facts and Figures-->
+                <div class="col-6 mr-auto">
+                    <table class="table-bordered">
+                        <caption class="bg-dark">Facts and Figures</caption>
+                        <tr>
+                            <td>Started</td>
+                            <td>2010</td>
+                        </tr>
+                        <tr>
+                            <td>Employees</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>Major stake Holder</td>
+                            <td>HK fine food inc.</td>
+                        </tr>
+                        <tr>
+                            <td>Last Year's Revenue</td>
+                            <td>KES 2,000,000</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
 
             <!--Corporate Leadership -->
-            <div class="row row-content">
-                <h2>Corporate Leadership</h2>
+            <div class="container">
+                <h2 class="text-center">Corporate Leadership</h2>
+                <div class="underline"></div>
                 <!-- Leader -->
-                <div>
+                <div class="row">
 
                     <div class="col-3">
                         <h3>Peter Pan</h3>
+                        <img src="./images/titus.jpg" alt="Chef Titus">
                     </div>
                     <div class="col-9">
                         <p>
@@ -87,10 +110,11 @@
                 </div>
 
                 <!-- Leader -->
-                <div>
+                <div class="row">
 
                     <div class="col-3">
                         <h3>Danny</h3>
+                        <img src="./images/titus.jpg" alt="Chef Titus">
                     </div>
                     <div class="col-9">
                         <p>
@@ -99,14 +123,16 @@
                                 </span>
                             </strong>
                             Chief Food Officer</p>
-                        </div>
                         <p>Our CFO, Danny, as he is affectionately referred to by his colleagues, comes from a long established family tradition in farming and produce. His experiences growing up on a farm in the Australian outback gave him great appreciation for varieties of food sources. As he puts it in his own words,<em> Everything that runs, wins, and everything that stays, pays!</em></p>
                 </div>
+                </div>
                 <!-- Leader -->
-                <div>
+                <div class="row">
 
                     <div class="col-3">
                         <h3>Agumbe</h3>
+                        <img src="./images/titus.jpg" alt="Chef Titus">
+
                     </div>
                     <div class="col-9">
                         <p>
@@ -115,14 +141,16 @@
                                 </span>
                             </strong>
                             Chief Taste Officerr</p>
-                        </div>
                         <p>Blessed with the most discerning gustatory sense, Agumbe, our CTO, personally ensures that every dish that we serve meets his exacting tastes. Our chefs dread the tongue lashing that ensues if their dish does not meet his exacting standards. He lives by his motto, <em>You click only if you survive my lick.</em></p>
                 </div>
-                 <!-- Leader -->
-                 <div>
+                </div>
+                    <!-- Leader -->
+                    <div class="row">
 
                     <div class="col-3">
                         <h3>Titus</h3>
+                        <img src="./images/titus.jpg" alt="Chef Titus">
+
                     </div>
                     <div class="col-9">
                         <p>
@@ -137,7 +165,7 @@
         <!-- Footer -->
         <footer class="container-fluid">
             <div class="row">
-                <div class="col-4">
+                <div class="col-6">
                     <h2>links</h2>
                     <ul class="list-unstyled">
                         <li>
@@ -155,7 +183,7 @@
                     </li>
                 </div>
 
-                <div class="col-8">
+                <div class="col-6">
                     <h2>Address</h2>
                     <p>
                         anniversary towers

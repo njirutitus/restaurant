@@ -6,8 +6,58 @@ body {
   line-height: 1.5;
   font-size: 0.875rem;
 }
+
+.container-fluid {
+  width: 100%;
+  clear: both;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  clear: both;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+}
+
+.col-9 {
+  max-width: 900px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.col-6 {
+  max-width: 500px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.col-3 {
+  max-width: 300px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+.ml-auto {
+  margin-left: auto;
+}
+
+p {
+  max-width: 60em;
+}
 #navbar {
-  background-color: #003d00;
+  background-color: #32681d;
+  /* background-color: #003d00; */
   width: 100%;
   color: floralwhite;
   min-height: 50px;
@@ -22,19 +72,17 @@ body {
 
 .jumbotron {
   background-color: #32681d;
+  background-image: url("../images/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: 0 auto;
   padding: 70px 30px 70px 30px;
   color: floralwhite;
-  display: flex;
-  flex-direction: column;
+  align-items: center;
 }
 .tagline {
   max-width: 600px;
-}
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  clear: both;
 }
 
 .jumbotron h1 {
@@ -73,19 +121,18 @@ img {
   min-height: 400px;
 }
 
-.table-bordered tr td {
+.table-bordered {
+  box-sizing: border-box;
   font-size: 20px;
   border: 1px solid grey;
-}
-
-.table-bordered {
-  border-collapse: collapse;
-  width: 400px;
+  position: relative;
+  width: 100%;
+  padding: 5px;
 }
 
 .table-bordered caption {
   font-size: 26px;
-  background-color: #003d00;
+  background-color: #2b3ddd;
 }
 
 footer {
@@ -95,15 +142,6 @@ footer {
   padding: 15px;
 }
 
-.col-3 {
-  width: 30%;
-  float: left;
-}
-
-.col-9 {
-  width: 70%;
-  float: left;
-}
 .highlights-item {
   box-sizing: border-box;
   max-width: 1000px;
@@ -131,11 +169,6 @@ footer {
 
 .list-unstyled {
   list-style-type: none;
-}
-
-.container-fluid {
-  width: 100%;
-  clear: both;
 }
 
 .text-center {
@@ -235,6 +268,11 @@ form {
   display: flex;
   flex-direction: row;
   align-items: center;
+  line-height: 1.5em;
+  width: 100vw;
+  margin: 0 auto;
+  font-size: 26px;
+  background-color: #e9ecef;
 }
 
 .breadcrumb * {
