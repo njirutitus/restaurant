@@ -274,12 +274,7 @@ h4 {
 
 /* Breadcrumn */
 .breadcrumb {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   line-height: 1.5em;
-  width: 100vw;
-  margin: 0 auto;
   font-size: 26px;
   background-color: #e9ecef;
 }
