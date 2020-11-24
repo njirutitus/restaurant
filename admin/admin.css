@@ -1,0 +1,164 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.wrapper {
+  margin: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+#navbar {
+  flex-grow: 0;
+  background-color: #fff;
+}
+.content-wrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100vh;
+}
+
+.content {
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+
+.list-unstyled li a,
+.sidebar > a {
+  color: #fff;
+  height: 4.375rem;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  letter-spacing: 0.05rem;
+  line-height: 2.5rem;
+  z-index: 1;
+}
+
+.sidebar > a {
+  text-transform: uppercase;
+  height: 50px;
+  line-height: 50px;
+}
+
+.footer {
+  flex-grow: 0;
+  margin-bottom: 0;
+  background-color: #fff;
+  width: 100%;
+  margin: 0;
+}
+
+.sidebar {
+  height: 100vh;
+  background-color: #003d00;
+  width: 20%;
+}
+
+.table-responsive {
+  padding: 5px;
+}
+
+.table-bordered {
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 0;
+  border-collapse: collapse;
+}
+
+tr,
+th,
+td {
+  border: 1px solid hsl(226, 30%, 92%);
+  text-align: left;
+  padding: 5px;
+}
+
+.topbar #sidebarToggleTop {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-color: transparent;
+  border-radius: 50% !important;
+  font-weight: 400;
+  color: #4e73df;
+  text-decoration: none;
+  margin-left: 15px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.bg-warning {
+  display: inline;
+  background: #ba2121;
+  border-radius: 4px;
+  padding: 5px 10px;
+  height: 15px;
+  line-height: 15px;
+  color: #fff;
+}
+
+.bg-success {
+  display: inline;
+  border: none;
+  font-weight: 400;
+  background: #79aec8;
+  border-radius: 4px;
+  padding: 5px 10px;
+  height: 15px;
+  line-height: 15px;
+  color: #fff;
+}
+
+.bg-primary {
+  display: block;
+  border: none;
+  font-weight: 400;
+  background: #79aec8;
+  border-radius: 4px;
+  padding: 5px 10px;
+  height: 15px;
+  line-height: 15px;
+  color: #fff;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (max-width: 576px) {
+  .sidebar {
+    display: none;
+  }
+
+  .content-wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .topbar #sidebarToggleTop {
+    display: none;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

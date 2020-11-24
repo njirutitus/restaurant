@@ -61,10 +61,12 @@ body {
 }
 
 .mr-auto {
+  margin-left: 20px;
   margin-right: auto;
 }
 .ml-auto {
   margin-left: auto;
+  margin-right: 20px;
 }
 
 p {
@@ -153,7 +155,6 @@ img {
 footer {
   box-sizing: border-box;
   background-color: #619648;
-  min-height: 250px;
   padding: 15px;
 }
 
@@ -193,21 +194,28 @@ footer {
 .dropdown {
   position: relative;
 }
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
 .dropdown-content {
-  display: block;
-  left: 0;
+  display: none;
+  right: 0;
   top: 100%;
   position: absolute;
   padding-top: 5px;
   background-color: #fff;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15) !important;
   z-index: 9999;
 
-  height: 200px;
+  height: auto;
   width: 200px;
+}
+
+.dropdown-content li {
+  display: block;
+  font-size: 0.85rem;
 }
 
 .menu-items {
