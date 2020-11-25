@@ -19,7 +19,7 @@
   <body>
     <div class="wrapper">
       <!-- side Navigation bar-->
-      <aside class="sidebar">
+      <aside class="sidebar" id="sidebar">
         <a href="">Mama Fish</a>
         <hr />
         <ul class="list-unstyled">
@@ -39,10 +39,14 @@
       </aside>
 
       <!-- Content-Wrapper -->
-      <main class="content-wrapper">
+      <main class="content-wrapper" id="main-content">
         <!-- Top bar -->
         <nav id="navbar" class="topbar">
-          <button id="sidebarToggleTop" class="mr-auto">
+          <button
+            id="sidebarToggleTop"
+            onclick="sidebarToggler();"
+            class="mr-auto"
+          >
             <i class="fa fa-bars"></i>
           </button>
           <div class="dropdown ml-auto">
@@ -153,5 +157,7 @@
         </footer>
       </main>
     </div>
+
+    <script src="../scripts/main.js"></script>
   </body>
 </html>
