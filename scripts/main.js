@@ -10,5 +10,6 @@ function sidebarToggler() {
     sidebar.style.zIndex = "99999";
   } else {
     sidebar.style.display = "none";
+    content.style.width = "100%";
   }
 }
