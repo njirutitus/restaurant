@@ -1,3 +1,9 @@
+/* Css variables */
+
+:root {
+  --clr-white: #fff;
+}
+
 html,
 body {
   margin: 0;
@@ -16,14 +22,14 @@ body {
 }
 #navbar {
   flex-grow: 0;
-  background-color: #fff;
+  background-color: var(--clr-white);
 }
 .content-wrapper {
-  width: 80%;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   height: 100vh;
+  flex-wrap: 1;
 }
 
 .content {
@@ -33,7 +39,7 @@ body {
 
 .list-unstyled li a,
 .sidebar > a {
-  color: #fff;
+  color: var(--clr-white);
   height: 4.375rem;
   text-decoration: none;
   font-size: 1rem;
@@ -45,7 +51,7 @@ body {
   z-index: 1;
 }
 
-.sidebar > a {
+.sidebar a {
   text-transform: uppercase;
   height: 50px;
   line-height: 50px;
@@ -54,7 +60,7 @@ body {
 .footer {
   flex-grow: 0;
   margin-bottom: 0;
-  background-color: #fff;
+  background-color: var(--clr-white);
   width: 100%;
   margin: 0;
 }
@@ -62,7 +68,14 @@ body {
 .sidebar {
   height: 100vh;
   background-color: #003d00;
-  width: 20%;
+  flex-shrink: 0;
+}
+
+.table th {
+  background-color: #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
 }
 
 .table-responsive {
@@ -71,7 +84,7 @@ body {
 
 .table-bordered {
   box-sizing: border-box;
-  background-color: #fff;
+  background-color: var(--clr-white);
   border: 0;
   border-collapse: collapse;
 }
@@ -97,6 +110,10 @@ td {
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+.topbar a {
+  color: #4e73df;
+}
+
 .bg-warning {
   display: inline;
   background: #ba2121;
@@ -104,7 +121,7 @@ td {
   padding: 5px 10px;
   height: 15px;
   line-height: 15px;
-  color: #fff;
+  color: var(--clr-white);
 }
 
 .bg-success {
@@ -116,7 +133,7 @@ td {
   padding: 5px 10px;
   height: 15px;
   line-height: 15px;
-  color: #fff;
+  color: var(--clr-white);
 }
 
 .bg-primary {
@@ -128,11 +145,10 @@ td {
   padding: 5px 10px;
   height: 15px;
   line-height: 15px;
-  color: #fff;
+  color: var(--clr-white);
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
-/* No media query for `xs` since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (max-width: 576px) {
@@ -146,9 +162,6 @@ td {
 }
 
 @media screen and (min-width: 576px) {
-  .topbar #sidebarToggleTop {
-    display: none;
-  }
 }
 
 /* Medium devices (tablets, 768px and up) */
