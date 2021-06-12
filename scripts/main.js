@@ -5,8 +5,6 @@ const content = document.getElementById("main-content");
 function sidebarToggler() {
   if (sidebar.style.display == "none") {
     sidebar.style.display = "block";
-    sidebar.style.width = "50%";
-    content.style.width = "50%";
     sidebar.style.zIndex = "99999";
   } else {
     sidebar.style.display = "none";
