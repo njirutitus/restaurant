@@ -73,30 +73,78 @@ const menu = [
   },
 ];
 
-const menuItems = document.querySelector(".menu-items");
-window.addEventListener("DOMContentLoaded", function () {
-  const items = menu.map(
-    (item) => `
-        <div class="menu-item row">
-        <div class="item-img">
-        <a href=""><img src="${item.img}" alt="${item.title}" /></a>
-        </div>
-        
-        <!-- Descritption -->
-        
-        <div class="item-description">
-        <div class="item-header">
-        <h3>${item.title}</h3>
-        <h3>KES ${item.price}</h3>
-        </div>
-        <p>
-        ${item.desc}
-        </p>
-        </div>
-        </div>
-        `
-  );
+const sectionCenter = document.querySelector(".menu-items");
+const btnContainer = document.querySelector(".btn-container");
 
-  let displayMenu = items.join("");
-  menuItems.innerHTML = displayMenu;
+window.addEventListener("DOMContentLoaded", function () {
+  displayMenuItems(menu);
+  displayMenuButtons();
 });
+
+function displayMenuItems(menuItems) {
+  let displayMenu = menuItems.map(function (item) {
+    // console.log(item);
+
+    return ` <div class="menu-item row">
+    <div class="item-img">
+    <a href=""><img src="${item.img}" alt="${item.title}" /></a>
+    </div>
+    
+    <div class="item-description">
+    <div class="item-header">
+    <h3>${item.title}</h3>
+    <h3>KES ${item.price}</h3>
+    </div>
+    <p>
+    ${item.desc}
+    </p>
+    </div>
+    </div>
+    `;
+  });
+  displayMenu = displayMenu.join("");
+  // console.log(displayMenu);
+
+  sectionCenter.innerHTML = displayMenu;
+}
+
+function displayMenuButtons() {
+  const categories = menu.reduce(
+    function (values, item) {
+      if (!values.includes(item.category)) {
+        values.push(item.category);
+      }
+      return values;
+    },
+    ["all"]
+  );
+  const categoryBtns = categories
+    .map(function (category) {
+      return `<button type="button" class="filter-btn" data-id=${category}>
+          ${category}
+        </button>`;
+    })
+    .join("");
+
+  btnContainer.innerHTML = categoryBtns;
+  const filterBtns = btnContainer.querySelectorAll(".filter-btn");
+  console.log(filterBtns);
+
+  filterBtns.forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      // console.log(e.currentTarget.dataset);
+      const category = e.currentTarget.dataset.id;
+      const menuCategory = menu.filter(function (menuItem) {
+        // console.log(menuItem.category);
+        if (menuItem.category === category) {
+          return menuItem;
+        }
+      });
+      if (category === "all") {
+        displayMenuItems(menu);
+      } else {
+        displayMenuItems(menuCategory);
+      }
+    });
+  });
+}
